@@ -9,7 +9,7 @@ class TimeToGetApi extends Gatherer {
         return driver.evaluateAsync('window.getServiceTime')
             .then(getServiceTime => {
                 if (!getServiceTime) {
-                    throw new Error('Unable to find card load metrics in page');
+                    throw new Error('Unable to find getApi load metrics in page');
                 }
                 return getServiceTime;
             });
